@@ -33,11 +33,8 @@
  */
 -(void)netCorePushLogout:(NetCoreStatusBlock)block;
 /*
- netCorePushDelivered taking input  as Identity,strTrid,latitude,longitude and return response block
+ netCoreProfilePush taking input as Identity and custom payload and return response block
  */
--(void)netCorePushDelivered:(NSString *)strTrid Block:(NetCoreStatusBlock)block;
-/*
- netCorePushOpened taking input  as Identity,strTrid,latitude,longitude and return response block
- */
--(void)netCorePushOpened:(NSString *)strTrid  Block:(NetCoreStatusBlock)block;
+-(void)netCoreProfilePush:(NSString *)strIdentity Payload:(NSDictionary *)payload Block:(NetCoreStatusBlock)block;
+
 @end

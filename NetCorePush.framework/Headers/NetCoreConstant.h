@@ -10,7 +10,7 @@
 #define NetCoreConstant_h
 
 typedef void (^NetCoreStatusBlock)(NSInteger statusCode);
-typedef void (^NetCoreResultBlock)(id result);
+typedef void (^NetCoreResultBlock)(NSInteger statusCode,id result);
 
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
